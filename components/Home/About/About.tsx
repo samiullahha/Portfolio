@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import Image from 'next/image'
 
@@ -49,6 +48,9 @@ const About = () => {
               </p>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 My expertise lies in frontend development with strong skills in <span className="text-cyan-300">Next.js</span>, <span className="text-cyan-300">React.js</span>, and <span className="text-cyan-300">TailwindCSS</span>. I am also enthusiastic about <span className="text-cyan-300">JavaScript</span>, <span className="text-cyan-300">TypeScript</span>, <span className="text-cyan-300">Node.js</span>, and <span className="text-cyan-300">MongoDB</span>, continually expanding my knowledge to create efficient and scalable solutions.
+              </p>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                I am eager to grow professionally and contribute to innovative projects that blend cutting-edge AI technologies with modern web development.
               </p>
             </div>
 

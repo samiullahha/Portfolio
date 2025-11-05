@@ -17,8 +17,8 @@ const Hero = () => {
           height={150}
           className='w-[150px] h-[150px] rounded-full border-2 border-[#0c0c48aa] object-cover mb-4 sm:mb-6'
         />
-        <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mt-4 sm:mt-6 px-4 text-center tracking-wide'>
-          Crafting digital experiences with <br className='hidden sm:block'/>clean  <span className='text-cyan-300'>code</span> and <span className='text-cyan-300'>creative design.</span>
+        <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 sm:mt-6 px-4 text-center tracking-wide'>
+          Crafting digital experiences with <br className='hidden sm:block'/>clean  <span className='text-yellow-300'>code</span> and <span className='text-cyan-300'>creative design<span className='text-yellow-600'>.</span></span>
           </h1>
           <h2 className='mt-4 sm:mt-5 text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl px-2 text-center font-medium flex flex-col sm:flex-row items-center justify-center'>
             Hi! I'm Sami Ullah - A Passionate 

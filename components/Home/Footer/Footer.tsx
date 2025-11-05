@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsEnvelope, BsLinkedin } from 'react-icons/bs'
-import { FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 import { Navlinks } from '@/constant/constant'
 
 const Footer = () => {
@@ -12,14 +13,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Left Section - Branding */}
           <div className="text-center sm:text-left">
-            <div className="flex items-center justify-center sm:justify-start mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white text-xl sm:text-2xl font-bold">&lt;/&gt;</span>
-              </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-white">CodeMaster</h2>
-            </div>
-            <p className="text-white text-xs sm:text-sm mb-2">Pakistan No.1 Online Service Platform</p>
-            <p className="text-gray-400 text-xs sm:text-sm">Gives you all online services</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">
+              Sami <span className="text-cyan-300">Ullah</span>
+            </h2>
+            <p className="text-white text-xs sm:text-sm leading-relaxed">
+              Full-Stack Developer crafting beautiful and functional web experiences
+            </p>
           </div>
 
           {/* Middle Section - Quick Links */}
@@ -66,9 +65,9 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-800/50 hover:bg-cyan-400 rounded-full flex items-center justify-center border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-110 group"
-                title="Twitter"
+                title="X (Twitter)"
               >
-                <FaTwitter className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors" />
+                <FaXTwitter className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors" />
               </a>
               <a 
                 href="mailto:su1946275@gmail.com" 

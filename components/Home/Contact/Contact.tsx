@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react'
 import { BsEnvelope, BsPhone, BsLinkedin, BsGeoAlt } from 'react-icons/bs'
-import { FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,8 +48,9 @@ const Contact = () => {
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Contact Information</h2>
             <div className="space-y-4 sm:space-y-5">
               <a 
-                href="mailto:su1946275@gmail.com" 
+                href="mailto:su1946275@gmail.com?subject=Contact%20from%20Portfolio"
                 className="flex items-center group bg-gray-800/50 hover:bg-gray-800/70 p-4 rounded-lg border border-gray-700 hover:border-cyan-400 transition-all duration-300 cursor-pointer"
+                aria-label="Send email to su1946275@gmail.com"
               >
                 <div className="w-10 h-10 bg-cyan-400/20 rounded-full flex items-center justify-center mr-4 group-hover:bg-cyan-400/30 transition-colors">
                   <BsEnvelope className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
@@ -94,16 +96,17 @@ const Contact = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-800/50 hover:bg-cyan-400 rounded-full flex items-center justify-center border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-110 group"
-                  title="Twitter"
+                  title="X (Twitter)"
                 >
-                  <FaTwitter className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors" />
+                  <FaXTwitter className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors" />
                 </a>
                 <a 
-                  href="mailto:su1946275@gmail.com" 
-                  className="w-12 h-12 bg-gray-800/50 hover:bg-cyan-400 rounded-full flex items-center justify-center border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-110 group"
+                  href="mailto:su1946275@gmail.com?subject=Contact%20from%20Portfolio"
+                  className="w-12 h-12 bg-gray-800/50 hover:bg-cyan-400 rounded-full flex items-center justify-center border border-gray-700 hover:border-cyan-400 transition-all duration-300 hover:scale-110 group cursor-pointer"
                   title="Email"
+                  aria-label="Send email to su1946275@gmail.com"
                 >
-                  <BsEnvelope className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors" />
+                  <BsEnvelope className="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors pointer-events-none" />
                 </a>
               </div>
             </div>

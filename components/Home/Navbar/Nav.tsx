@@ -30,7 +30,7 @@ const Nav: React.FC<Props> = ({ openNav }) => {
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <FaCode className="w-5 h-5 text-black" />
           </div>
-            <h1 className="text-xl hidden sm:block md:text-2xl text-white font-bold">Sami Ullah<span className="text-cyan-300">.</span></h1>
+          <h1 className="text-base sm:text-xl md:text-2xl text-white font-bold">Sami Ullah.</h1>
         </div>
 
         {/* Flexible spacer pushes the next block fully to the right without changing internal gaps */}
