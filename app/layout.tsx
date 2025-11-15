@@ -19,7 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        elements: {
+          formButtonPrimary: 'bg-cyan-500 hover:bg-cyan-600',
+        },
+      }}
+    >
       <html lang="en">
         <body
           className={`${font.className} antialiased bg-[#0d0d1f]`}
