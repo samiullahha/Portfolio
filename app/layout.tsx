@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from '@clerk/nextjs';
-import ConditionalNav from "@/components/ConditionalNav";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
- const font = Inter({
-  weight: [ "100", "200","300","400","500","600","700" ,"800","900"],
-   subsets: ["latin"],
- });
+const font = Inter({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 export const metadata: Metadata = {
   title: "My Developer Portfolio",
   description: "Showcasing my projects and skills",
@@ -19,21 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      appearance={{
-        elements: {
-          formButtonPrimary: 'bg-cyan-500 hover:bg-cyan-600',
-        },
-      }}
-    >
-      <html lang="en">
-        <body
-          className={`${font.className} antialiased bg-[#0d0d1f]`}
-        >
-           <ConditionalNav />
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body
+        className={`${font.className} antialiased bg-[#0d0d1f]`}
+      >
+        <ResponsiveNav />
+        {children}
+      </body>
+    </html>
   );
 }

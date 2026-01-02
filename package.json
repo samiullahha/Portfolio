@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.35.1",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
